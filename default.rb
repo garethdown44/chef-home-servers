@@ -17,10 +17,6 @@ mount '/mnt/data' do
   action [:mount, :enable]
 end
 
-execute 'apt-get install software properties common' do
-  command 'apt-get install software-properties-common'
-end
-
 execute 'add-repo' do
   command 'add-apt-repository -y ppa:team-xbmc/ppa'
 end

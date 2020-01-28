@@ -8,7 +8,6 @@ directory '/mnt/data' do
   mode '0755'
 end
 
-
 mount '/mnt/data' do
   device 'bc680280-dd0b-4d26-b88a-84a578aa48bc'
   device_type :uuid

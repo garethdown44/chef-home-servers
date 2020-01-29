@@ -9,7 +9,7 @@ directory '/mnt/data-2' do
 end
 
 mount '/mnt/data-2' do
-  device 'TODO'
+  device '34451D606552997A'
   device_type :uuid
   fstype 'ntfs'
   options 'defaults'

@@ -1,7 +1,7 @@
 # # data drive
 # UUID=bc680280-dd0b-4d26-b88a-84a578aa48bc /mnt/data       ext4    defaults        0       0
 
-cookbook_file 'samba', '~> 1.2.0'
+include_cookbook 'samba', '~> 1.2.0'
 
 execute 'apt-get-update' do
   command 'apt-get update'

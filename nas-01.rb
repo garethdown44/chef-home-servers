@@ -31,7 +31,7 @@ samba_user 'user1' do
 end
 
 samba_server 'samba server' do
-  hosts_allow 192.168.1.0/24
+  hosts_allow "192.168.1.0/24"
 end
 
 samba_share 'data-2' do

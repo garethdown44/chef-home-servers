@@ -1,6 +1,13 @@
 # # data drive
 # UUID=bc680280-dd0b-4d26-b88a-84a578aa48bc /mnt/data       ext4    defaults        0       0
 
+execute 'apt-get-update' do
+  command 'apt-get update'
+end
+
+apt_package 'samba'
+apt_package 'smbfs'
+
 include_recipe 'samba::user'
 include_recipe 'samba::server'
 include_recipe 'samba::share'

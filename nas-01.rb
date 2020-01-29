@@ -1,6 +1,8 @@
 # # data drive
 # UUID=bc680280-dd0b-4d26-b88a-84a578aa48bc /mnt/data       ext4    defaults        0       0
 
+cookbook 'samba', '= 0.10.6'
+
 directory '/mnt/data-2' do
   action :create
   owner 'garethd'

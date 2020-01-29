@@ -8,9 +8,7 @@ end
 apt_package 'samba'
 apt_package 'smbfs'
 
-include_recipe 'samba::user'
-include_recipe 'samba::server'
-include_recipe 'samba::share'
+include_recipe 'samba::default'
 
 directory '/mnt/data-2' do
   action :create
